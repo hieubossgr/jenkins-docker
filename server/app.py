@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     info = {
-        "hostname": socket.gethostname(),aaa
+        "hostname": socket.gethostname(),
         "your_ip": request.remote_addr
     }
     return render_template('index.html', info=info)
